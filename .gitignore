@@ -1,0 +1,7 @@
+.DS_Store
+ios/Tray.xcodeproj/
+ios/Tray/Resources/Secrets.xcconfig
+ios/build/
+DerivedData/
+*.xcuserstate
+xcuserdata/

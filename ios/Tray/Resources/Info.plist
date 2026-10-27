@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleDisplayName</key>
+  <string>Tray</string>
+  <key>CFBundleShortVersionString</key>
+  <string>$(MARKETING_VERSION)</string>
+  <key>CFBundleVersion</key>
+  <string>$(CURRENT_PROJECT_VERSION)</string>
+  <key>UILaunchScreen</key>
+  <dict/>
+  <key>UISupportedInterfaceOrientations</key>
+  <array>
+    <string>UIInterfaceOrientationPortrait</string>
+  </array>
+
+  <!-- Backend, injected from Secrets.xcconfig. The scheme is added in code
+       because a bare "//" in an xcconfig starts a comment. -->
+  <key>SUPABASE_HOST</key>
+  <string>$(SUPABASE_HOST)</string>
+  <key>SUPABASE_ANON_KEY</key>
+  <string>$(SUPABASE_ANON_KEY)</string>
+
+  <!-- Always authorisation is what makes the whole app work: without it iOS
+       will not wake Tray when you walk into a dining hall. -->
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>Tray uses your location only to tell when you have arrived at a dining hall.</string>
+  <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+  <string>Tray checks you in automatically when you walk into a dining hall, so you never have to open the app. Your friends see the hall and how long you have been there — never your location.</string>
+
+  <key>UIBackgroundModes</key>
+  <array>
+    <string>location</string>
+    <string>fetch</string>
+  </array>
+  <key>BGTaskSchedulerPermittedIdentifiers</key>
+  <array>
+    <string>app.tray.refresh</string>
+  </array>
+</dict>
+</plist>
