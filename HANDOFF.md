@@ -23,7 +23,7 @@ probably the wrong feature.
 
 | Piece | What it is | State |
 |---|---|---|
-| `prototype/index.html` | Every screen, clickable, fake data, no backend. One file, vanilla JS. | **Works.** Open it in a browser. |
+| `prototype/index.html` | Every screen, clickable, fake data, no backend. One file, vanilla JS. | **Works.** [Live here](https://rargulkar-arch.github.io/tray/). |
 | `supabase/migrations/` | Postgres schema, row level security, and every RPC the app calls. | **Tested.** See below. |
 | `supabase/seed.sql` | Northeastern's five dining halls with real coordinates. | **Tested**, idempotent. |
 | `ios/Tray/` | The SwiftUI app. ~2,000 lines across 20 files. | **Never compiled.** See below. |
@@ -132,7 +132,8 @@ waiting to happen.
 
 ## Getting started in ten minutes
 
-1. Open `prototype/index.html` in a browser. That is the product.
+1. Open **https://rargulkar-arch.github.io/tray/** and tap through it. That is
+   the product. The source is one file: `prototype/index.html`.
 2. Make a free Supabase project, run the six migrations and the seed from the
    SQL editor in order, and turn on phone auth with a test number.
 3. Then pick a direction above.

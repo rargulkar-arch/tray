@@ -2,6 +2,8 @@
 
 See which friends are eating, without asking anyone.
 
+**[Try the prototype →](https://rargulkar-arch.github.io/tray/)** — every screen, clickable, fake data.
+
 You walk into a dining hall; Tray notices and puts your name on a list. Your
 friends open the app and see who is where. That is the entire product.
 
